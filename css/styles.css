@@ -37,6 +37,7 @@ a {
 
 h1, h2, h3, h4 {
     font-family: var(--fontHeading);
+    line-height: 2;
 }
 
 h1 {
@@ -100,6 +101,7 @@ img {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 2rem;
     }
 }
 
@@ -168,4 +170,48 @@ img {
 
 .button--primary {
     background-color: var(--black);
+}
+
+.button--secundary {
+    background-color: var(--primary);
+}
+
+.courses {
+    list-style: none;
+}
+
+.widget-courses{
+    border-bottom: 1px solid var(--grey);
+    margin-bottom: 2rem;
+}
+
+.widget-courses:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+.widget-courses__label {
+    font-family: var(--fontHeading);
+    font-weight: bold;
+}
+
+.widget-courses__info {
+    font-weight: normal;
+}
+
+.widget-courses__label,
+.widget--courses__info {
+    font-size: 2rem;
+}
+
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    margin-top: 2rem;
+}
+
+.footer {
+    background-color: var(--black);
+    padding-bottom: 3rem 0;
+    margin-top: 4rem;
 }
