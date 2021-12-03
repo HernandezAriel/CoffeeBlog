@@ -190,7 +190,8 @@ img {
     margin-bottom: 0;
 }
 
-.widget-courses__label {
+.widget-courses__label,
+.course__label {
     font-family: var(--fontHeading);
     font-weight: bold;
 }
@@ -214,4 +215,32 @@ img {
     background-color: var(--black);
     padding-bottom: 3rem 0;
     margin-top: 4rem;
+}
+/**About Us**/
+
+@media (min-width: 768px) {
+    .about-us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+/**Courses**/
+
+.courses {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--grey);
+}
+
+@media (min-width: 768px){
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.courses:last-of-type {
+    border: none;
 }
